@@ -1,10 +1,12 @@
 package es.netmind.simuladorcoches;
 
 import es.netmind.simuladorcoches.modelos.coches.*;
+import es.netmind.simuladorcoches.modelos.motores.Electrico;
 
 public class GestorCoches {
 
     static int DISTANCIA = 100;
+
 
     public static void main(String[] args) {
         System.out.println("SIMULADOR DE COCHES");
@@ -21,6 +23,7 @@ public class GestorCoches {
 
         System.out.println("Cargando ....");
         ICoche c1 = new Deportivo("Porsche", "Deportivo", 120, false);
+        c1.setMotor(new Electrico(3,2));
         c1.arrancar();
         ICoche c2 = new Familiar("Renault", "Familiar", 130, 5);
         c2.arrancar();
