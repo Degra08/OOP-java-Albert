@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 
 @RestController
-@RequestMapping("/clients")
+@RequestMapping("/proyectos")
 @Validated
 public class ProyectoServiceController {
 
